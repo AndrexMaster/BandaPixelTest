@@ -1,0 +1,7 @@
+.removeFromFavoriteBtn path{
+    transition: .1s;
+}
+
+.removeFromFavoriteBtn:hover path{
+    fill: #ec4646;
+}

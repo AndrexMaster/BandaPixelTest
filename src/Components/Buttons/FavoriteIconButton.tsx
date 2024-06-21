@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 
 interface FavoriteIconButtonProps {
-    handleClick: (e?: React.MouseEvent<HTMLButtonElement>) => void;
+    handleClick: () => void;
     size?: number;
     isActive?: boolean;
     inactiveTitle?: string;
@@ -15,7 +15,7 @@ const FavoriteIconButton = forwardRef<HTMLDivElement, FavoriteIconButtonProps>(
             <div
                 ref={ref}
                 className={'flex justify-center align-middle cursor-pointer'}
-                onClick={() => handleClick}
+                onClick={() => handleClick()}
                 title={
                     isActive
                         ? 'Видалити з улюбленного'
@@ -38,7 +38,6 @@ const FavoriteIconButton = forwardRef<HTMLDivElement, FavoriteIconButtonProps>(
     }
 );
 
-// Установка displayName для компонента
 FavoriteIconButton.displayName = 'FavoriteIconButton';
 
 export { FavoriteIconButton };

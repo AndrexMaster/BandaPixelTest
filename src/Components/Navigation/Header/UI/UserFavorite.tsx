@@ -14,7 +14,7 @@ export const UserFavorite = () => {
         (state: RootState) => state.user.favorite
     );
     const menuRef = useRef<HTMLDivElement>(null);
-    const buttonRef = useRef<HTMLDivElement>(null); // Обновление типа
+    const buttonRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {

@@ -30,7 +30,7 @@ export const Pagination = (props: PaginationProps) => {
             ))}
             <button
                 className={`px-3 py-1 mx-1 rounded ${currentPage === totalPages ? 'cursor-not-allowed' : 'hover:bg-gray-200'}`}
-                onClick={() => onPageChange(currentPage - 1)}
+                onClick={() => onPageChange(currentPage + 1)}
                 disabled={currentPage === totalPages}
             >
                 Next
